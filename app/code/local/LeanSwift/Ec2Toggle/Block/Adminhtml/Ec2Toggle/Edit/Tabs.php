@@ -4,27 +4,17 @@
  *
  * NOTICE OF LICENSE
  *
- * This source file is subject to the LeanSwift Ec2Toggle Extension License
- * that is bundled with this package in the file LICENSE.txt located in the Connector Server.
- *
- * DISCLAIMER
- *
- * This extension is licensed and distributed by LeanSwift. Do not edit or add to this file
- * if you wish to upgrade Extension and Ec2Toggle to newer versions in the future.
- * If you wish to customize Extension for your needs please contact LeanSwift for more
- * information. You may not reverse engineer, decompile,
- * or disassemble LeanSwift Ec2Toggle Extension (All Versions), except and only to the extent that
- * such activity is expressly permitted by applicable law not withstanding this limitation.
- *
- * @copyright   Copyright (c) Leanswift Solutions, Inc - All Rights Reserved
- * Unauthorized copying of this file, via any medium is strictly prohibited.
- * Proprietary and confidential.
+ * GNU GENERAL PUBLIC LICENSE
+ * Version 3, 29 June 2007
+
+ * Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+ * Everyone is permitted to copy and distribute verbatim copies
+ * of this license document, but changing it is not allowed.
  *
  * @category   Ec2Toggle
- * @package    LeanSwift Solutions
+ * @package    LeanSwift
  * @author     Janagiram <janagiram@leanswift.com>
- * @version    Ec2Toggle 1.0
- * @license    http://www.leanswift.com/license/ec2Toggle-extension
+ * @version    1.0
  */
  class LeanSwift_Ec2Toggle_Block_Adminhtml_Ec2Toggle_Edit_Tabs extends Mage_Adminhtml_Block_Widget_Tabs
  {
