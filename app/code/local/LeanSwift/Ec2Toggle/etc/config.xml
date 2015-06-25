@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * LeanSwift Ec2Toggle Extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the LeanSwift Ec2Toggle Extension License
+ * that is bundled with this package in the file LICENSE.txt located in the Connector Server.
+ *
+ * DISCLAIMER
+ *
+ * This extension is licensed and distributed by LeanSwift. Do not edit or add to this file
+ * if you wish to upgrade Extension and Ec2Toggle to newer versions in the future.
+ * If you wish to customize Extension for your needs please contact LeanSwift for more
+ * information. You may not reverse engineer, decompile,
+ * or disassemble LeanSwift Ec2Toggle Extension (All Versions), except and only to the extent that
+ * such activity is expressly permitted by applicable law not withstanding this limitation.
+ *
+ * @copyright   Copyright (c) Leanswift Solutions, Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited.
+ * Proprietary and confidential.
+ *
+ * @category   Ec2Toggle
+ * @package    LeanSwift Solutions
+ * @author     Janagiram <janagiram@leanswift.com>
+ * @version    Ec2Toggle 1.0
+ * @license    http://www.leanswift.com/license/ec2Toggle-extension
+ */
+-->
+<config>
+    <modules>
+        <LeanSwift_Ec2Toggle>
+            <version>0.1.0</version>
+        </LeanSwift_Ec2Toggle>
+    </modules>
+    <admin>
+        <routers>
+            <ec2Toggle>
+                <use>admin</use>
+                <args>
+                    <module>LeanSwift_Ec2Toggle</module>
+                    <frontName>ec2Toggle</frontName>
+                </args>
+            </ec2Toggle>
+        </routers>
+    </admin>
+    <global>
+        <models>
+            <ec2Toggle>
+               <class>LeanSwift_Ec2Toggle_Model</class>
+               <resourceModel>ec2Toggle_mysql4</resourceModel>
+            </ec2Toggle>
+            <ec2Toggle_mysql4>
+                <class>LeanSwift_Ec2Toggle_Model_Mysql4</class>
+                <entities>
+                    <ec2Toggle>
+                        <table>ls_ec2Toggle</table>
+                    </ec2Toggle>
+                </entities>
+            </ec2Toggle_mysql4>
+        </models>
+        <resources>
+            <ec2Toggle_setup>
+                <setup>
+                    <module>LeanSwift_Ec2Toggle</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </ec2Toggle_setup>
+            <ec2Toggle_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </ec2Toggle_write>
+            <ec2Toggle_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </ec2Toggle_read>
+        </resources>
+        <blocks>
+            <ec2Toggle>
+                <class>LeanSwift_Ec2Toggle_Block</class>
+            </ec2Toggle>
+        </blocks>
+        <helpers>
+            <ec2Toggle>
+                <class>LeanSwift_Ec2Toggle_Helper</class>
+            </ec2Toggle>
+        </helpers>
+    </global>
+</config>

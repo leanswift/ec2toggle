@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <ec2Toggle_adminhtml_ec2Toggle_index>
+      <reference name="content">
+          <block type="ec2Toggle/adminhtml_ec2Toggle" name="ec2Toggle"/>
+      </reference>
+  </ec2Toggle_adminhtml_ec2Toggle_index>
+</layout>

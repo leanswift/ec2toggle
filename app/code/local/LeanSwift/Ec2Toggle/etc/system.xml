@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * LeanSwift Ec2Toggle Extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the LeanSwift Ec2Toggle Extension License
+ * that is bundled with this package in the file LICENSE.txt located in the Connector Server.
+ *
+ * DISCLAIMER
+ *
+ * This extension is licensed and distributed by LeanSwift. Do not edit or add to this file
+ * if you wish to upgrade Extension and Ec2Toggle to newer versions in the future.
+ * If you wish to customize Extension for your needs please contact LeanSwift for more
+ * information. You may not reverse engineer, decompile,
+ * or disassemble LeanSwift Ec2Toggle Extension (All Versions), except and only to the extent that
+ * such activity is expressly permitted by applicable law not withstanding this limitation.
+ *
+ * @copyright   Copyright (c) Leanswift Solutions, Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited.
+ * Proprietary and confidential.
+ *
+ * @category   Ec2Toggle
+ * @package    LeanSwift Solutions
+ * @author     Janagiram <janagiram@leanswift.com>
+ * @version    Ec2Toggle 1.0
+ * @license    http://www.leanswift.com/license/ec2Toggle-extension
+ */
+-->
+<config>
+    <sections>
+        <ec2Toggle translate="label">
+            <label>Ec2Toggle</label>
+            <tab>leanswift</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <aws_credentials translate="label">
+                    <label>AWS Credentials</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <aws_key translate="label">
+                            <label>Key</label>
+                            <frontend_type>obscure</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </aws_key>
+                        <aws_secret translate="label">
+                            <label>Secret</label>
+                            <frontend_type>obscure</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </aws_secret>
+                    </fields>
+                </aws_credentials>
+            </groups>
+        </ec2Toggle>
+    </sections>
+</config>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * LeanSwift Ec2Toggle Extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the LeanSwift Ec2Toggle Extension License
+ * that is bundled with this package in the file LICENSE.txt located in the Connector Server.
+ *
+ * DISCLAIMER
+ *
+ * This extension is licensed and distributed by LeanSwift. Do not edit or add to this file
+ * if you wish to upgrade Extension and Ec2Toggle to newer versions in the future.
+ * If you wish to customize Extension for your needs please contact LeanSwift for more
+ * information. You may not reverse engineer, decompile,
+ * or disassemble LeanSwift Ec2Toggle Extension (All Versions), except and only to the extent that
+ * such activity is expressly permitted by applicable law not withstanding this limitation.
+ *
+ * @copyright   Copyright (c) Leanswift Solutions, Inc - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited.
+ * Proprietary and confidential.
+ *
+ * @category   Ec2Toggle
+ * @package    LeanSwift Solutions
+ * @author     Janagiram <janagiram@leanswift.com>
+ * @version    Ec2Toggle 1.0
+ * @license    http://www.leanswift.com/license/ec2Toggle-extension
+ */
+-->
+<config>
+    <menu>
+        <ec2Toggle module="ec2Toggle">
+			<title>LeanSwift</title>
+            <sort_order>81</sort_order>
+            <children>
+                <items translate="title" module="ec2Toggle">
+                    <title>Ec2Toggle</title>
+                    <sort_order>40</sort_order>
+                    <action>ec2Toggle/adminhtml_ec2Toggle</action>
+                </items>
+            </children>
+        </ec2Toggle>
+    </menu>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <ec2Toggle translate="title">
+                                        <title>Ec2Toggle</title>
+                                        <sort_order>100</sort_order>
+                                    </ec2Toggle>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <layout>
+        <updates>
+            <ec2Toggle>
+                <file>ec2Toggle.xml</file>
+            </ec2Toggle>
+        </updates>
+    </layout>
+</config>
